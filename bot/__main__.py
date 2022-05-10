@@ -45,8 +45,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("owner", "https://t.me/sarbudeen786")
-    buttons.buildbutton("Channel", "https://t.me/thanimaibots")
+    buttons.buildbutton("owner", "https://t.me/Dark_World7_4")
+    buttons.buildbutton("Channel", "https://t.me/rangermoviess")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -155,8 +155,8 @@ help_string_telegraph = f'''<br>
 '''
 help = Telegraph(access_token=telegraph_token).create_page(
         title='Mirror Help',
-        author_name='lonely Mirrorbot',
-        author_url='http://t.me/Thanimaisupport',
+        author_name='ranger Mirrorbot',
+        author_url='http://t.me/Dark_World7_4',
         html_content=help_string_telegraph,
     )["path"]
 
